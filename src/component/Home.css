@@ -1,0 +1,193 @@
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F1F6F9;
+}
+
+.homepage{
+  margin-top: 70px;
+ 
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.backg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Background image should be behind */
+}
+
+.backg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire background */
+}
+
+.backg-body {
+  position: relative; 
+  z-index: 2; /* Content should be above the background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: rgb(7, 19, 108); /* Adjust the text color to ensure it's visible */
+  padding-bottom: 5%;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-content {
+  flex: 1;
+  /* padding-right: 20px; */
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5%;
+}
+
+.imgfluid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.hp1{
+  padding-top: 5%;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title1 {
+  font-size: 3rem;
+  font-family: "Lobster", cursive;
+  padding-bottom: 4%;
+}
+
+/* .wrapper {
+  animation: scroll 1000s linear infinite;
+  color: #0d0d0d;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20%;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+/* @media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 1000s linear infinite;
+  }
+} */
+
+.home-content {
+  font-size: 4rem;
+  color: #14274E;
+  font-family: "Lobster", cursive;
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 4rem;
+  }
+} 
+
+
+/* CSS */
+.button {
+  appearance: button;
+  background-color: #394867;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fffbfb;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button:focus {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.contact{
+  color: #f7f7f7;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 12px 50px;
+  }
+}

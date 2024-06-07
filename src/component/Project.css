@@ -1,0 +1,136 @@
+
+/* Ensure the html and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfe5e8;
+}
+
+.accord{
+    position:relative;
+    box-sizing: border-box;
+}
+
+.h1-proj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    font-family: "Lobster", cursive;
+}
+
+.h1-proj h1{
+    font-size: 3rem;
+
+     font-weight: bold;
+}
+
+
+
+.project{
+    /* margin-top: 100px;
+    padding-top: 1%; */
+    background-color: #dfe5e8;
+}
+.gridproj{
+    margin: 100px 20px 80px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    flex: 1;
+    box-sizing: border-box;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    background-color:#dfe5e8;
+}
+
+.d1{
+    border-radius: 10px;
+    background-color: #394867;
+    padding: 20px;
+    box-sizing: border-box;
+    /* width: 650px;
+    height: 650px; */
+}
+
+.matter{
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+.h2-proj h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.8rem;
+}
+.h2-proj{
+    background-color: #909fb9;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    font-family: "Nunito Sans", sans-serif;
+
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    margin: 10px;
+}
+
+.log{
+    border-radius: 50%;
+}
+
+.pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+  
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #F1F6F9;
+    }
+    .gridproj {
+        grid-template-columns: 1fr; 
+       
+    }
+}
+
+/* Media query for even smaller screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #F1F6F9;
+    }
+    .d1 {
+        width: 50%;
+        height: 100%;
+    }
+    .pic{
+        height: 70px;
+    }
+
+}
+
+
