@@ -98,7 +98,7 @@ const Resume = () => {
         <img src={res} height="50px" alt="logo" />
         <button className="button" >
           <a
-            href="./resume/T_SRICHARITHA.pdf"
+            href=".sricharitha16.github.io/Assets/resume/T_SRICHARITHA.pdf"
             target="_blank"
             className="view-button"
           >
