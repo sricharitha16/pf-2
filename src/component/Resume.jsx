@@ -44,7 +44,7 @@ const Resume = () => {
             <b>Data Science/Analysis:</b> scikit-learn, Weka, Matplotlib, NumPy,
             Pandas, TenserFlow
             <br />
-            <b>Design Tools:</b> Adobe Illustrator, Figma 
+            <b>Design Tools:</b> Figma, Adobe Illustrator, Adobe Photoshop
           </p>
         </div>
       </div>
